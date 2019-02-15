@@ -32,7 +32,7 @@
           <li class="nav-item px-2">
             <a href="categories.html" class="nav-link">Categories</a>
           </li>
-          <li class="nav-item px-2 active">
+          <li class="nav-item px-2">
             <a href="users.html" class="nav-link">Users</a>
           </li>
         </ul>
@@ -60,29 +60,38 @@
   </div>
 
   <!-- HEADER -->
-  <header id="main-header" class="py-2 bg-warning text-white">
+  <header id="main-header" class="py-2 bg-primary text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1>
-            <i class="fas fa-users"></i>
-            Posts</h1>
+            Post One</h1>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Search -->
-  <section id="search" class="py-4 mb-4 bg-light">
+  <!-- Actions -->
+  <section id="action" class="py-4 mb-4 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search User...">
-            <div class="input-group-append">
-              <button class="btn btn-warning">Search</button>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-secondary btn-block">
+            <i class="fas fa-arrow-left"></i>
+            Go Back
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-success btn-block">
+            <i class="fas fa-check"></i>
+            Save Changes
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-danger btn-block">
+            <i class="fas fa-trash"></i>
+            Cancel
+          </a>
         </div>
       </div>
     </div>
@@ -95,53 +104,38 @@
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Lastest Posts</h4>
+              <h4>Post One</h4>
             </div>
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Hary White</td>
-                  <td>hary@gmail.com</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Susan Horlan</td>
-                  <td>susan@yahoo.com</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Houda Winter</td>
-                  <td>huda@live.cn</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fas fa-angle-double-right"></i>
-                      Details
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                  <label for="category">Category</label>
+                  <select id="category" class="form-control">
+                    <option value="web">Web Developer</option>
+                    <option value="tech">Tech Gadgets</option>
+                    <option value="business">Business</option>
+                    <option value="health">Health & Wellness</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="image">Upload Image</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="uploadImage">
+                    <label for="uploadImage" class="custom-file-label">Choose Image</label>
+                  </div>
+                  <small class="form-text text-muted">Max Size 3mb</small>
+                </div>
+                <div class="form-group">
+                  <label for="body">Body</label>
+                  <textarea name='editor1' id="body"
+                    class='form-control'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eaque necessitatibus nulla ipsam quam, nobis nostrum, error, incidunt eum nesciunt sunt corporis consequatur neque ad numquam sed iste! Delectus quod voluptatem odio ab rerum saepe at odit alias non incidunt.</textarea>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -162,8 +156,6 @@
       </div>
     </div>
   </footer>
-
-
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
